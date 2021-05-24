@@ -1,0 +1,37 @@
+{
+  "id": "2565519",
+  "name": "FirstVue",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1110404",
+      "name": "箭头 左 小",
+      "font_class": "jiantou2",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "5712195",
+      "name": "地球",
+      "font_class": "diqiu",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "10148096",
+      "name": "位置",
+      "font_class": "weizhi",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "19689765",
+      "name": "搜 索",
+      "font_class": "sousuo_huaban1",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    }
+  ]
+}
