@@ -14,23 +14,28 @@ export default {
   name: "Homeheader",
 };
 </script>
-<style scoped>
+<style scoped lang="stylus">
+@import '~css/var.styl';
+
 .header {
   width: 100%;
   height: 0.88rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: darkturquoise;
+  background-color: $bgColor;
   font-size: 0.25rem;
 }
+
 .header-left {
-  flex: 0.2;
+  flex: 0.15;
+  text-align: center;
 }
 
 .header-left span {
   margin: 0 0.25rem;
 }
+
 .header-search {
   flex: 1;
   height: 0.55rem;
@@ -39,13 +44,17 @@ export default {
   border-radius: 5px;
   font-weight: bold;
 }
+
 .header-search span {
   margin: 0 0.15rem;
   line-height: 27.5px;
 }
+
 .header-right {
   flex: 0.3;
+  color: #fff;
 }
+
 .header-right span {
   margin-left: 0.3rem;
 }
