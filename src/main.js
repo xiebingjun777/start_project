@@ -14,7 +14,7 @@ import './assets/css/iconfont.css'
 /* eslint-disable no-new */
 //swiper组件
 import VueAwesomeSwiper from 'vue-awesome-swiper'
-import 'swiper/css/swiper.css'
+import 'swiper/dist/css/swiper.css'
 Vue.use(VueAwesomeSwiper)
 
 new Vue({
