@@ -17,8 +17,6 @@
           alt=""
       /></swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
-      <div class="swiper-button-prev" slot="button-prev"></div>
-      <div class="swiper-button-next" slot="button-next"></div>
     </swiper>
   </div>
 </template>
@@ -70,12 +68,14 @@ export default {
 </script>
 <style scoped lang="stylus">
 .recommendPage {
+  background: #CCC;
   width: 100%;
-  height: 2rem;
+  height: 0;
+  padding-bottom: 31.53%;
 }
 
 .recommendPage img {
   width: 100%;
-  height: 2.5rem;
+  height: 100%;
 }
 </style>
