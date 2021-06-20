@@ -6,6 +6,7 @@
     <HomeLocation></HomeLocation>
     <HomeActivity></HomeActivity>
     <HomeMenu></HomeMenu>
+    <HomeLike></HomeLike>
   </div>
 </template>
 <script>
@@ -15,6 +16,7 @@ import HomeIcons from "./pages/icons";
 import HomeLocation from "./pages/location";
 import HomeActivity from "./pages/activity";
 import HomeMenu from "./pages/menu";
+import HomeLike from "./pages/maylike";
 export default {
   components: {
     Homeheader,
@@ -23,6 +25,7 @@ export default {
     HomeLocation,
     HomeActivity,
     HomeMenu,
+    HomeLike,
   },
 };
 </script>
