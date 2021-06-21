@@ -17,6 +17,10 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 Vue.use(VueAwesomeSwiper)
 
+import axios from 'axios'
+Vue.prototype.$http = axios
+
+
 new Vue({
   el: '#app',
   router,

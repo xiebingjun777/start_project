@@ -21,6 +21,7 @@ import { swiper, swiperSlide } from "vue-awesome-swiper";
 import "swiper/dist/css/swiper.css";
 
 export default {
+  props: ["iconList"],
   components: {
     swiper,
     swiperSlide,
@@ -30,68 +31,6 @@ export default {
       swiperOption: {
         // scrollbar: ".swiper-scrollbar",
       },
-      iconList: [
-        {
-          id: 1,
-          imgUrl:
-            "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
-          title: "景点门票",
-        },
-        {
-          id: 2,
-          imgUrl:
-            "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
-          title: "必去榜单",
-        },
-        {
-          id: 3,
-          imgUrl:
-            "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
-          title: "新鲜地点",
-        },
-        {
-          id: 4,
-          imgUrl:
-            "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
-          title: "每日必看",
-        },
-        {
-          id: 5,
-          imgUrl:
-            "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
-          title: "团购出游",
-        },
-        {
-          id: 6,
-          imgUrl:
-            "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
-          title: "bala",
-        },
-        {
-          id: 7,
-          imgUrl:
-            "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
-          title: "bala",
-        },
-        {
-          id: 8,
-          imgUrl:
-            "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
-          title: "bala",
-        },
-        {
-          id: 9,
-          imgUrl:
-            "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
-          title: "bala",
-        },
-        {
-          id: 10,
-          imgUrl:
-            "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
-          title: "bala",
-        },
-      ],
     };
   },
   computed: {

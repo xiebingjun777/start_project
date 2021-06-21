@@ -26,53 +26,9 @@
 </template>
 <script>
 export default {
+  props: ["hotList"],
   data() {
-    return {
-      hotList: [
-        {
-          id: 1,
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/201403/07/a47369acdec386e923b3713c2c8b9b21.jpg_250x250_37165821.jpg",
-          title: "银子岩",
-          price: 51.3,
-        },
-        {
-          id: 2,
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/201307/26/f079b5ba23c098c5c8d65eac.jpg_250x250_82f05e59.jpg",
-          title: "杨堤",
-          price: 69,
-        },
-        {
-          id: 3,
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/1512/fe/fe08d17ffe7d036b90.water.jpg_250x250_77032a37.jpg",
-          title: "龙脊梯田",
-          price: 71,
-        },
-        {
-          id: 4,
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/1709/f8/f8faa3df62df0668a3.water.jpg_250x250_d2f2cd32.jpg",
-          title: "象山景区象山景区象山景区象山景区象山景区",
-          price: 80,
-        },
-        {
-          id: 5,
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/1412/c5/1820808e48ea0aafe038a696ea908b29.water.jpg_250x250_b83818a5.jpg",
-          title: "黄洛瑶寨",
-          price: 50,
-        },
-        {
-          id: 6,
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/1504/64/648f4ea360e37bf0.water.png_250x250_3dee4e59.png",
-          title: "漓江三星级游船",
-          price: 128,
-        },
-      ],
-    };
+    return {};
   },
 };
 </script>

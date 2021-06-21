@@ -1,0 +1,144 @@
+{
+    "data": [
+        {
+            "city": "北京",
+            "dataList": [],
+            "iconList": [
+                {
+                    "id": 1,
+                    "imgUrl": "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
+                    "title": "景点门票"
+                },
+                {
+                    "id": 2,
+                    "imgUrl": "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
+                    "title": "必去榜单"
+                },
+                {
+                    "id": 3,
+                    "imgUrl": "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
+                    "title": "新鲜地点"
+                },
+                {
+                    "id": 4,
+                    "imgUrl": "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
+                    "title": "每日必看"
+                },
+                {
+                    "id": 5,
+                    "imgUrl": "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
+                    "title": "团购出游"
+                },
+                {
+                    "id": 6,
+                    "imgUrl": "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
+                    "title": "bala"
+                },
+                {
+                    "id": 7,
+                    "imgUrl": "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
+                    "title": "bala"
+                },
+                {
+                    "id": 8,
+                    "imgUrl": "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
+                    "title": "bala"
+                },
+                {
+                    "id": 9,
+                    "imgUrl": "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
+                    "title": "bala"
+                },
+                {
+                    "id": 10,
+                    "imgUrl": "https://gw.alicdn.com/tfs/TB19uWKXkCy2eVjSZPfXXbdgpXa-183-144.png?getAvatar=1",
+                    "title": "bala"
+                }
+            ],
+            "hotList": [
+                {
+                    "id": 1,
+                    "imgUrl": "https://imgs.qunarzz.com/sight/p0/201403/07/a47369acdec386e923b3713c2c8b9b21.jpg_250x250_37165821.jpg",
+                    "title": "银子岩",
+                    "price": 51.3
+                },
+                {
+                    "id": 2,
+                    "imgUrl": "https://imgs.qunarzz.com/sight/p0/201307/26/f079b5ba23c098c5c8d65eac.jpg_250x250_82f05e59.jpg",
+                    "title": "杨堤",
+                    "price": 69
+                },
+                {
+                    "id": 3,
+                    "imgUrl": "https://imgs.qunarzz.com/sight/p0/1512/fe/fe08d17ffe7d036b90.water.jpg_250x250_77032a37.jpg",
+                    "title": "龙脊梯田",
+                    "price": 71
+                },
+                {
+                    "id": 4,
+                    "imgUrl": "https://imgs.qunarzz.com/sight/p0/1709/f8/f8faa3df62df0668a3.water.jpg_250x250_d2f2cd32.jpg",
+                    "title": "象山景区象山景区象山景区象山景区象山景区",
+                    "price": 80
+                },
+                {
+                    "id": 5,
+                    "imgUrl": "https://imgs.qunarzz.com/sight/p0/1412/c5/1820808e48ea0aafe038a696ea908b29.water.jpg_250x250_b83818a5.jpg",
+                    "title": "黄洛瑶寨",
+                    "price": 50
+                },
+                {
+                    "id": 6,
+                    "imgUrl": "https://imgs.qunarzz.com/sight/p0/1504/64/648f4ea360e37bf0.water.png_250x250_3dee4e59.png",
+                    "title": "漓江三星级游船",
+                    "price": 128
+                }
+            ],
+            "likeList": [
+                {
+                    "id": 1,
+                    "imgUrl": "https://imgs.qunarzz.com/sight/p0/2006/6d/6d32ad054c71da4a3.img.jpg_200x200_ca4041fd.jpg",
+                    "title": "桂林千古情",
+                    "msg": "3216条评论",
+                    "pre": "280",
+                    "map": "桂林"
+                },
+                {
+                    "id": 2,
+                    "imgUrl": "https://imgs.qunarzz.com/sight/p0/201408/11/d3d0abadb961eb32cbfd7b1615efdb12.jpg_200x200_cfb94c7f.jpg",
+                    "title": "山水间演出",
+                    "msg": "263条评论",
+                    "pre": "83",
+                    "map": "秀峰区"
+                },
+                {
+                    "id": 3,
+                    "imgUrl": "https://imgs.qunarzz.com/sight/p0/201301/11/c3999da09f538f9f93835fbb.jpg_200x200_c03d784a.jpg",
+                    "title": "印象刘三姐",
+                    "msg": "17933条评论",
+                    "pre": "218",
+                    "map": "阳朔县"
+                }
+            ],
+            "vacationList": [
+                {
+                    "id": 1,
+                    "imgUrl": "https://imgs.qunarzz.com/sight/source/1509/b0/83481d0d95a39b.jpg_r_640x214_7dc3d605.jpg",
+                    "headline1": "漂流勇进，烧烤露营",
+                    "headline2": "轻松水上漂，任我乐逍遥"
+                },
+                {
+                    "id": 2,
+                    "imgUrl": "https://imgs.qunarzz.com/sight/source/1505/24/f947f286f2cf61.jpg_r_640x214_46fb6378.jpg",
+                    "headline1": "桂林必打卡",
+                    "headline2": "桂林山水甲天下"
+                },
+                {
+                    "id": 3,
+                    "imgUrl": "https://imgs.qunarzz.com/sight/source/1505/4b/719ef55ffb66e4.jpg_r_640x214_9891a20c.jpg",
+                    "headline1": "登山赏美景",
+                    "headline2": "象鼻山的景色犹如人间仙境，让人流连忘返，在这里可以饱览漓江美不胜收的全景 "
+                }
+            ]
+        }
+    ]
+}

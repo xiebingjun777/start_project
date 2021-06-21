@@ -28,38 +28,9 @@
 </template>
 <script>
 export default {
+  props: ["likeList"],
   data() {
-    return {
-      likeList: [
-        {
-          id: 1,
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/2006/6d/6d32ad054c71da4a3.img.jpg_200x200_ca4041fd.jpg",
-          title: "桂林千古情",
-          msg: "3216条评论",
-          pre: "280",
-          map: "桂林",
-        },
-        {
-          id: 2,
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/201408/11/d3d0abadb961eb32cbfd7b1615efdb12.jpg_200x200_cfb94c7f.jpg",
-          title: "山水间演出",
-          msg: "263条评论",
-          pre: "83",
-          map: "秀峰区",
-        },
-        {
-          id: 3,
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/201301/11/c3999da09f538f9f93835fbb.jpg_200x200_c03d784a.jpg",
-          title: "印象刘三姐",
-          msg: "17933条评论",
-          pre: "218",
-          map: "阳朔县",
-        },
-      ],
-    };
+    return {};
   },
 };
 </script> 

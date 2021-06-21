@@ -1,21 +1,22 @@
 <template>
   <div class="header">
-    <div class="header-left">
+    <div class="header-left" @click="toHome">
       <span class="iconfont">&#xe604;</span>
     </div>
-    <div class="header-search">
-      <span class="iconfont">&#xe60d; 请输入地点</span>
-    </div>
+    <div class="header-title">城市选择</div>
     <div class="header-right">
-      <router-link to="/city">
-        <span class="iconfont">&#xe600;北京</span>
-      </router-link>
+      <router-link to="/city"> </router-link>
     </div>
   </div>
 </template>
 <script>
 export default {
   name: "Homeheader",
+  methods: {
+    toHome() {
+      this.$router.push("/");
+    },
+  },
 };
 </script>
 <style scoped lang="stylus">
@@ -24,15 +25,14 @@ export default {
 .header {
   width: 100%;
   height: 0.88rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: $bgColor;
   font-size: 0.25rem;
+  position: relative;
 }
 
 .header-left {
-  flex: 0.15;
+  width: 0.4rem;
+  padding: 0.2rem;
   text-align: center;
 }
 
@@ -40,13 +40,13 @@ export default {
   margin: 0 0.25rem;
 }
 
-.header-search {
-  flex: 1;
-  height: 0.55rem;
-  background-color: #fff;
-  color: #e4e7ea;
-  border-radius: 5px;
-  font-weight: bold;
+.header-title {
+  text-align: center;
+  position: absolute;
+  top: 0.3rem;
+  left: 45%;
+  font-size: 0.3rem;
+  color: #fff;
 }
 
 .header-search span {
@@ -56,10 +56,10 @@ export default {
 
 .header-right {
   flex: 0.3;
+  color: #fff;
 }
 
 .header-right span {
   margin-left: 0.3rem;
-  color: #fff;
 }
 </style>
