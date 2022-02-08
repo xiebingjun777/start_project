@@ -14,7 +14,7 @@ npm run dev
 ```
 
 # 效果图
-![start_project.gif](https://ooo.0o0.ooo/2017/07/09/5961a0e413dcc.gif)
+![start_project.gif](https://raw.githubusercontent.com/xiebingjun777/start_project/master/showImg/app.png?token=GHSAT0AAAAAABRJ3OVRH3AU4WHOJ3BR4BPIYQCRGAA)
 
 # 技术栈
 - vue-cli：Vue的官方脚手架工具
