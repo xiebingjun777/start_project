@@ -1,21 +1,30 @@
-# start_project
+# 项目启动
+```
+step1:
+git clone https://github.com/xiebingjun777/start_project.git
 
-> A Vue.js project
+step2:
+cd start_project
 
-## Build Setup
-
-``` bash
-# install dependencies
+step3:
 npm install
 
-# serve with hot reload at localhost:8080
+step4:
 npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# 效果图
+![start_project.gif](https://ooo.0o0.ooo/2017/07/09/5961a0e413dcc.gif)
+
+# 技术栈
+- vue-cli：Vue的官方脚手架工具
+- Axios: 异步获取数据
+- vue-router: Vue的路由管理插件
+- ES6语法：更加简洁高效
+- scss: 便捷，规范的css预处理器
+- flex布局：自适应布局
+- webpack: 模块压缩和项目打包器
+
+
+
+
