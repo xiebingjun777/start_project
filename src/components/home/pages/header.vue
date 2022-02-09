@@ -8,7 +8,7 @@
     </div>
     <div class="header-right">
       <router-link to="/city">
-        <span class="iconfont">&#xe600;{{currentCity}}</span>
+        <span class="iconfont">&#xe600;{{ currentCity }}</span>
       </router-link>
     </div>
   </div>
@@ -16,11 +16,12 @@
 <script>
 export default {
   name: "Homeheader",
-  props:["currentCity"]
+  props: ["currentCity"],
 };
 </script>
 <style scoped lang="stylus">
 @import '~css/var.styl';
+@import '~css/common.styl';
 
 .header {
   width: 100%;
@@ -56,11 +57,14 @@ export default {
 }
 
 .header-right {
+  display: flex;
+  justify-content: center;
   flex: 0.3;
 }
 
 .header-right span {
-  margin-left: 0.3rem;
+  // margin-left: 0.3rem;
   color: #fff;
+  textOverflow();
 }
 </style>

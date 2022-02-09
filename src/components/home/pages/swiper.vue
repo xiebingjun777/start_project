@@ -2,19 +2,13 @@
   <div class="recommendPage">
     <swiper :options="swiperOption" ref="mySwiper">
       <swiper-slide
-        ><img
-          src="../../../assets/swiper/swiper01.jpg"
-          alt=""
+        ><img src="../../../assets/swiper/swiper01.jpg" alt=""
       /></swiper-slide>
       <swiper-slide
-        ><img
-          src="../../../assets/swiper/swiper02.jpg"
-          alt=""
+        ><img src="../../../assets/swiper/swiper02.jpg" alt=""
       /></swiper-slide>
       <swiper-slide
-        ><img
-          src="../../../assets/swiper/swiper03.jpg"
-          alt=""
+        ><img src="../../../assets/swiper/swiper03.jpg" alt=""
       /></swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
@@ -70,7 +64,8 @@ export default {
 .recommendPage {
   background: #CCC;
   width: 100%;
-  height: 106px
+  height: 0;
+  overflow: hidden;
 }
 
 .recommendPage img {
