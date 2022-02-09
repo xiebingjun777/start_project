@@ -3,17 +3,17 @@
     <swiper :options="swiperOption" ref="mySwiper">
       <swiper-slide
         ><img
-          src="https://aecpm.alicdn.com/simba/img/TB15tIjGVXXXXcoapXXSutbFXXX.jpg"
+          src="../../../assets/swiper/swiper01.jpg"
           alt=""
       /></swiper-slide>
       <swiper-slide
         ><img
-          src="https://aecpm.alicdn.com/simba/img/TB1CWf9KpXXXXbuXpXXSutbFXXX.jpg_q50.jpg"
+          src="../../../assets/swiper/swiper02.jpg"
           alt=""
       /></swiper-slide>
       <swiper-slide
         ><img
-          src="https://img.alicdn.com/imgextra/i3/2206686532409/O1CN01ASkXej1TfMo6N2fwl_!!2206686532409-0-lubanimage.jpg"
+          src="../../../assets/swiper/swiper03.jpg"
           alt=""
       /></swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
@@ -70,8 +70,7 @@ export default {
 .recommendPage {
   background: #CCC;
   width: 100%;
-  height: 0;
-  padding-bottom: 31.53%;
+  height: 106px
 }
 
 .recommendPage img {

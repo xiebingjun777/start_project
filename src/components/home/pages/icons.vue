@@ -59,8 +59,8 @@ export default {
 }
 .icons .items img {
   display: block;
-  width: 1.2rem;
-  height: 0.96rem;
+  width: 31.88px;
+  height: 31.88px;
   margin: 0 auto;
 }
 .icons .items p {

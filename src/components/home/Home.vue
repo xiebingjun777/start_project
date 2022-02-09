@@ -1,10 +1,10 @@
 <template>
   <div class="home">
-    <Homeheader></Homeheader>
+    <Homeheader :currentCity="currentCity"></Homeheader>
     <HomeSwiper></HomeSwiper>
     <HomeIcons :iconList="iconList"></HomeIcons>
     <HomeLocation></HomeLocation>
-    <HomeActivity></HomeActivity>
+    <!-- <HomeActivity></HomeActivity> -->
     <HomeMenu :hotList="hotList"></HomeMenu>
     <HomeLike :likeList="likeList"></HomeLike>
     <HomeVacation :vacationList="vacationList"></HomeVacation>
@@ -36,16 +36,19 @@ export default {
       hotList: [],
       likeList: [],
       vacationList: [],
+      currentCity :""
     };
   },
   mounted() {
     this.$http.get("/api/dataHome.json").then((res) => {
       console.log(res.data);
       const data = res.data.data[0];
-      this.iconList = data.iconList;
+      const menuIcon = res.data.menu_icon[0]
+      this.iconList = menuIcon.iconList;
       this.hotList = data.hotList;
       this.likeList = data.likeList;
       this.vacationList = data.vacationList;
+      this.currentCity = data.city
     });
   },
 };

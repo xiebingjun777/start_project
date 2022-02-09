@@ -8,7 +8,7 @@
     </div>
     <div class="header-right">
       <router-link to="/city">
-        <span class="iconfont">&#xe600;北京</span>
+        <span class="iconfont">&#xe600;{{currentCity}}</span>
       </router-link>
     </div>
   </div>
@@ -16,6 +16,7 @@
 <script>
 export default {
   name: "Homeheader",
+  props:["currentCity"]
 };
 </script>
 <style scoped lang="stylus">

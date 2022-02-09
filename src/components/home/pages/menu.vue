@@ -2,7 +2,7 @@
   <div class="menu-icons">
     <div class="menu-header">
       <img
-        src="https://gw.alicdn.com/tfs/TB1LvIxVAvoK1RjSZFDXXXY3pXa-183-144.png?getAvatar=1"
+        src="https://imgs.qunarzz.com/piao/fusion/1711/16/bfbb9874e8f11402.png"
         alt=""
       />
       <span>本周热门榜单</span>
@@ -49,8 +49,8 @@ export default {
 }
 
 .menu-icons .menu-header img {
-  width: 0.55rem;
-  height: 0.4rem;
+  width: 15px;
+  height: 15px;
   line-height: 0.5rem;
   /* float: left;
   margin-left: 0.5rem; */
