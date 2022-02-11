@@ -2,11 +2,19 @@ import Vue from "vue";
 import Vuex from "vuex";
 
 Vue.use(Vuex)
-
-let cityState = {
-    currentCity = "桂林";
+let defaultCity = "桂林"
+const state = {
+    currentCity : defaultCity
 }
 
-let store = new Vuex.store({
-    state: cityState
+const cityMutations = {
+    changeCurrentCity(state,local){
+        state.currentCity = local;
+    }
+}
+export default new Vuex.Store({
+    state,
+    mutations:cityMutations
 })
+
+ 

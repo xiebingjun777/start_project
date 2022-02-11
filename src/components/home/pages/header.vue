@@ -8,15 +8,19 @@
     </div>
     <div class="header-right">
       <router-link to="/city">
-        <span class="iconfont">&#xe600;{{ currentCity }}</span>
+        <span class="iconfont">&#xe600;{{currentCity}}</span>
       </router-link>
     </div>
   </div>
 </template>
 <script>
+import {mapState} from 'vuex'
 export default {
   name: "Homeheader",
-  props: ["currentCity"],
+  // props: ["currentCity"],
+  computed:{
+    ...mapState(['currentCity'])  
+  }
 };
 </script>
 <style scoped lang="stylus">

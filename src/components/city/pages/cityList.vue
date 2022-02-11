@@ -13,12 +13,12 @@
       <div class="hot-title">热门城市</div>
 
       <ul class="hot-list">
-        <li class="hot-item">北京</li>
-        <li class="hot-item">上海</li>
-        <li class="hot-item">广州</li>
-        <li class="hot-item">深圳</li>
-        <li class="hot-item">苏州</li>
-        <li class="hot-item">杭州</li>
+        <li class="hot-item" @click="changeLocalCity('北京')">北京</li>
+        <li class="hot-item" @click="changeLocalCity('上海')">上海</li>
+        <li class="hot-item" @click="changeLocalCity('广州')">广州</li>
+        <li class="hot-item" @click="changeLocalCity('深圳')">深圳</li>
+        <li class="hot-item" @click="changeLocalCity('苏州')">苏州</li>
+        <li class="hot-item" @click="changeLocalCity('杭州')">杭州</li>
       </ul>
     </div>
     <div class="sort">
@@ -34,7 +34,7 @@
       <div v-for="item in cityLists" :key="item.id">
         <div class="List-title">{{ item.title }}</div>
         <ul class="List-msg">
-          <li v-for="areaItem in item.lists" class="List-item">
+          <li v-for="areaItem in item.lists" class="List-item" @click="changeLocalCity(areaItem)">
             {{ areaItem }}
           </li>
         </ul>
@@ -43,6 +43,8 @@
   </div>
 </template>
 <script>
+import {mapMutations} from 'vuex'
+
 export default {
   name: "Homeheader",
   props: ["hotCity", "cityLists"],
@@ -50,13 +52,24 @@ export default {
     toHome() {
       this.$router.push("/");
     },
+    ...mapMutations(['changeCurrentCity']),
+    changeLocalCity(localCity){
+      this.changeCurrentCity(localCity);
+      this.$router.push("/");
+    }
+
   },
+  computed(){
+
+  }
 };
 </script>
 <style scoped lang="stylus">
 @import '~css/var.styl';
 @import '~css/common.styl';
-
+.city{
+  width: 100%;
+}
 .header {
   width: 100%;
   height: 0.88rem;
@@ -109,17 +122,29 @@ export default {
   font-size: 0.28rem;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
-.hot-item::before {
-  content: ' ';
-  position: absolute;
-  height: 100%;
-  width: 33.333%;
-  left: 33.333%;
-  border-left: 0.02rem solid #ddd;
-  border-right: 0.02rem solid #ddd;
-}
+// .hot-list:before {
+//   content: '';
+//   position: absolute;
+//   left: 33.3%;
+//   width: 33.333%;
+//   height: 100%;
+//   border-left: 0.02rem solid #ddd;
+//   border-right: 0.02rem solid #ddd;
+  
+// }
+
+// .hot-item::before {
+//   content: ' ';
+//   position: absolute;
+//   height: 100%;
+//   width: 33.333%;
+//   left: 33.333%;
+//   border-left: 0.02rem solid #ddd;
+//   border-right: 0.02rem solid #ddd;
+// }
 
 .hot-item {
   width: 33.333%;
@@ -144,15 +169,15 @@ export default {
   // padding: 0.2rem;
 }
 
-.sort-item::before {
-  content: ' ';
-  position: absolute;
-  height: 100%;
-  width: 33.333%;
-  left: 33.333%;
-  border-left: 0.02rem solid #ddd;
-  border-right: 0.02rem solid #ddd;
-}
+/* .sort-item::before {
+//   content: '';
+//   position: absolute;
+//   // height: 100%;
+//   width: 33.333%;
+//   left: 33.333%;
+//   border-left: 0.02rem solid #ddd;
+//   border-right: 0.02rem solid #ddd;
+}*/
 
 .sort-item {
   width: 33.333%;
@@ -183,24 +208,6 @@ export default {
   overflow: hidden;
 }
 
-// .List-msg:before {
-// content: ' ';
-// width: 0;
-// position: absolute;
-// border-left: 1px solid #ddd;
-// border-right: 1px solid #ddd;
-// left: 25%;
-// height: 100%;
-// }
-
-// .List-msg:after {
-// content: ' ';
-// width: 0;
-// position: absolute;
-// border-left: 1px solid #ddd;
-// right: 25%;
-// height: 100%;
-// }
 .List-item {
   padding: 0 0.06rem;
   width: 33.3%;
