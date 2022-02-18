@@ -1,53 +1,68 @@
 <template>
   <div class="city">
-    <div class="header">
+    <!-- <div class="header">
       <div class="header-left" @click="toHome">
         <span class="iconfont">&#xe604;</span>
       </div>
-      <div class="header-title">城市选择</div>
+      <div class="header-title">城市选择</div> -->
       <!-- <div class="header-right">
       <router-link to="/city">0 </router-link>
     </div> -->
-    </div>
-    <div class="hot">
-      <div class="hot-title">热门城市</div>
+    <!-- </div> -->
+    <div class="container"  ref="container">
+      <div class="content">
+        <div class="hot">
+        <div class="hot-title">热门城市</div>
 
-      <ul class="hot-list">
-        <li class="hot-item" @click="changeLocalCity('北京')">北京</li>
-        <li class="hot-item" @click="changeLocalCity('上海')">上海</li>
-        <li class="hot-item" @click="changeLocalCity('广州')">广州</li>
-        <li class="hot-item" @click="changeLocalCity('深圳')">深圳</li>
-        <li class="hot-item" @click="changeLocalCity('苏州')">苏州</li>
-        <li class="hot-item" @click="changeLocalCity('杭州')">杭州</li>
-      </ul>
-    </div>
-    <div class="sort">
-      <div class="sort-title">字母排序</div>
+        <ul class="hot-list">
+          <li class="hot-item" @click="changeLocalCity('北京')">北京</li>
+          <li class="hot-item" @click="changeLocalCity('上海')">上海</li>
+          <li class="hot-item" @click="changeLocalCity('广州')">广州</li>
+          <li class="hot-item" @click="changeLocalCity('深圳')">深圳</li>
+          <li class="hot-item" @click="changeLocalCity('苏州')">苏州</li>
+          <li class="hot-item" @click="changeLocalCity('杭州')">杭州</li>
+        </ul>
+      </div>
+      <div class="sort">
+        <div class="sort-title">字母排序</div>
 
-      <ul class="sort-list">
-        <li v-for="item in cityLists" :key="item.id" class="sort-item">
-          {{ item.title }}
-        </li>
-      </ul>
-    </div>
-    <div class="cityList">
-      <div v-for="item in cityLists" :key="item.id">
-        <div class="List-title">{{ item.title }}</div>
-        <ul class="List-msg">
-          <li v-for="areaItem in item.lists" class="List-item" @click="changeLocalCity(areaItem)">
-            {{ areaItem }}
+        <ul class="sort-list">
+          <li v-for="item in cityLists" :key="item.id" class="sort-item" @click="scrollTo(item.title)">
+            {{ item.title }}
           </li>
         </ul>
+      </div>
+      <div class="cityList">
+        <div v-for="item in cityLists" :key="item.id" :ref="item.title">
+          <div class="List-title">{{ item.title }}</div>
+          <ul class="List-msg">
+            <li v-for="areaItem in item.lists" class="List-item" @click="changeLocalCity(areaItem)">
+              {{ areaItem }}
+            </li>
+          </ul>
+        </div>
+      </div>
       </div>
     </div>
   </div>
 </template>
 <script>
 import {mapMutations} from 'vuex'
+import BetterScroll from 'better-scroll'
 
 export default {
   name: "Homeheader",
   props: ["hotCity", "cityLists"],
+  data(){
+    return {
+      scroll:""
+    }
+  },
+  mounted(){
+    const container = this.$refs['container'];
+    this.scroll = new BetterScroll(container)
+    // console.log(container)
+  },
   methods: {
     toHome() {
       this.$router.push("/");
@@ -56,12 +71,14 @@ export default {
     changeLocalCity(localCity){
       this.changeCurrentCity(localCity);
       this.$router.push("/");
+    },
+    scrollTo(target){
+      console.log(this.$refs[target][0])
+      this.scroll.scrollToElement(this.$refs[target][0])
     }
 
   },
-  computed(){
-
-  }
+  
 };
 </script>
 <style scoped lang="stylus">
