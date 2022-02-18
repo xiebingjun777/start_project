@@ -125,25 +125,41 @@ export default {
   width: 100%;
 }
 
-// .hot-list:before {
-//   content: '';
-//   position: absolute;
-//   left: 33.3%;
-//   width: 33.333%;
-//   height: 100%;
-//   border-left: 0.02rem solid #ddd;
-//   border-right: 0.02rem solid #ddd;
-  
-// }
+.hot-list:before {
+  content: '';
+  position: absolute;
+  left: 33.333%;
+  width: 0;
+  height: 100%;
+  border-left: 0.02rem solid #ddd;
+
+}
+
+.hot-list:after {
+  content: '';
+  position: absolute;
+  right: 33.333%;
+  width: 0;
+  height: 100%;
+  border-left: 0.02rem solid #ddd;
+}
 
 // .hot-item::before {
 //   content: ' ';
 //   position: absolute;
 //   height: 100%;
-//   width: 33.333%;
+//   width: 0;
 //   left: 33.333%;
 //   border-left: 0.02rem solid #ddd;
-//   border-right: 0.02rem solid #ddd;
+// }
+
+// .hot-item::after {
+//   content: ' ';
+//   position: absolute;
+//   height: 100%;
+//   width: 0;
+//   right: 33.333%;
+//   border-left: 0.02rem solid #ddd;
 // }
 
 .hot-item {
@@ -169,15 +185,23 @@ export default {
   // padding: 0.2rem;
 }
 
-/* .sort-item::before {
-//   content: '';
-//   position: absolute;
-//   // height: 100%;
-//   width: 33.333%;
-//   left: 33.333%;
-//   border-left: 0.02rem solid #ddd;
-//   border-right: 0.02rem solid #ddd;
-}*/
+ .sort-item::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0;
+  left: 33.333%;
+  border-right: 0.02rem solid #ddd;
+}
+
+ .sort-item::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0;
+  right: 33.333%;
+  border-right: 0.02rem solid #ddd;
+}
 
 .sort-item {
   width: 33.333%;
