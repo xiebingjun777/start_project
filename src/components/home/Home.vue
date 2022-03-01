@@ -19,6 +19,7 @@ import HomeActivity from "./pages/activity";
 import HomeMenu from "./pages/menu";
 import HomeLike from "./pages/maylike";
 import HomeVacation from "./pages/vacation";
+import { mapState } from "vuex";
 export default {
   components: {
     Homeheader,
@@ -36,20 +37,35 @@ export default {
       hotList: [],
       likeList: [],
       vacationList: [],
-      currentCity :""
+      currentPageCity: "",
     };
   },
+  computed: {
+    ...mapState(["currentCity"]),
+  },
+  methods: {
+    getHttp() {
+      this.$http.get("/api/dataHome.json").then((res) => {
+        console.log(res.data);
+        const data = res.data.data[0];
+        const menuIcon = res.data.menu_icon[0];
+        this.iconList = menuIcon.iconList;
+        this.hotList = data.hotList;
+        this.likeList = data.likeList;
+        this.vacationList = data.vacationList;
+      });
+    },
+  },
   mounted() {
-    this.$http.get("/api/dataHome.json").then((res) => {
-      console.log(res.data);
-      const data = res.data.data[0];
-      const menuIcon = res.data.menu_icon[0]
-      this.iconList = menuIcon.iconList;
-      this.hotList = data.hotList;
-      this.likeList = data.likeList;
-      this.vacationList = data.vacationList;
-      this.currentCity = data.city
-    });
+    this.currentPageCity = this.currentCity;
+    this.getHttp();
+  },
+  activated() {
+    console.log(this.currentCity, this.currentPageCity);
+    if (this.currentPageCity != this.currentCity) {
+      this.currentPageCity = this.currentCity;
+      this.getHttp();
+    }
   },
 };
 </script>
