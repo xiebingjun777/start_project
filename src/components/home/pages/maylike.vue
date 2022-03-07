@@ -8,7 +8,11 @@
       猜你喜欢
     </div>
     <ul class="like-list">
-      <li class="like-item border-bottom" v-for="item in likeList">
+      <li
+        class="like-item border-bottom"
+        v-for="item in likeList"
+        @click="entryDetail()"
+      >
         <div class="like-item-img">
           <img :src="item.imgUrl" alt="" />
         </div>
@@ -31,6 +35,11 @@ export default {
   props: ["likeList"],
   data() {
     return {};
+  },
+  methods: {
+    entryDetail() {
+      this.$router.push("/details");
+    },
   },
 };
 </script> 
