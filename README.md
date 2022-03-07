@@ -14,8 +14,10 @@ npm run dev
 ```
 
 # 效果图
-![start_project.gif](https://raw.githubusercontent.com/xiebingjun777/start_project/master/showImg/app.png?token=GHSAT0AAAAAABRJ3OVRH3AU4WHOJ3BR4BPIYQCRGAA)
-
+![start_project.gif](https://github.com/xiebingjun777/start_project/blob/master/showImg/App2.png)
+![start_project.gif](https://github.com/xiebingjun777/start_project/blob/master/showImg/app3.png)
+![start_project.gif](https://github.com/xiebingjun777/start_project/blob/master/showImg/app4.png)
+![start_project.gif](https://github.com/xiebingjun777/start_project/blob/master/showImg/app5.png)
 # 技术栈
 - vue-cli：Vue的官方脚手架工具
 - Axios: 异步获取数据
